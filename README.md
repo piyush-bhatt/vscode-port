@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-port/main/media/icon/icon.png" alt="Port Logo" /></a>
 </p>
 
-> [Port](https://marketplace.visualstudio.com/items?itemName=piyush-bhatt.port) helps you **check availability** of a port, get an **available port**, or **kill running process** on a port from Visual Studio Code itself.
+> [Port](https://marketplace.visualstudio.com/items?itemName=piyush-bhatt.vscode-port) helps you **check availability** of a port, get an **available port**, or **kill running process** on a port from Visual Studio Code itself.
 
 # Features
 
