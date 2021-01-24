@@ -1,0 +1,94 @@
+{
+  "name": "vscode-port",
+  "displayName": "Port",
+  "description": "Check port availability, get an available port, or kill process on a port from VSCode",
+  "version": "1.0.0",
+  "publisher": "piyush-bhatt",
+  "author": {
+    "name": "Piyush Bhatt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piyush-bhatt/vscode-port"
+  },
+  "bugs": {
+    "url": "https://github.com/piyush-bhatt/vscode-port/issues"
+  },
+  "homepage": "https://github.com/piyush-bhatt/vscode-port#readme",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "vscode": "^1.52.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "port",
+    "tcp",
+    "localhost",
+    "kill",
+    "free port"
+  ],
+  "icon": "media/icon/icon.png",
+  "activationEvents": [
+    "onCommand:port.availablePort",
+    "onCommand:port.killPort"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Port",
+      "properties": {
+        "port.basePort": {
+          "type": "number",
+          "default": 1024,
+          "description": "Base Port to search an available port from"
+        },
+        "port.highestPort": {
+          "type": "number",
+          "default": 65535,
+          "description": "Highest Port to search an available port till"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "port.availablePort",
+        "title": "Available port"
+      },
+      {
+        "command": "port.killPort",
+        "title": "Kill process on a port"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.52.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.27",
+    "eslint": "^7.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.0.1",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.4.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "printWidth": 120,
+    "endOfLine": "auto",
+    "formatOnSave": true
+  }
+}
