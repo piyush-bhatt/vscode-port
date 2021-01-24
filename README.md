@@ -2,15 +2,15 @@
   <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-port/main/media/icon/icon.png" alt="Port Logo" /></a>
 </p>
 
-> [Port](https://marketplace.visualstudio.com/items?itemName=piyush-bhatt.port) helps you **check availability** of a port, get an **available port**, or **kill running process** on a port from Visual Studio Code itself.
+> [Port](https://marketplace.visualstudio.com/items?itemName=piyush-bhatt.vscode-port) helps you **check availability** of a port, get an **available port**, or **kill running process** on a port from Visual Studio Code itself.
 
-# Features
+# Commands
 
-### Check Availability
+### Available port
 
 Check if a port is available or free. If the port is occupied or no port number is provided in input, a random available port is returned based on the _Base Port_ and _Highest Port_ set in the `Settings`.
 
-### Kill Process
+### Kill process on port
 
 Kill a running process on a port.
 

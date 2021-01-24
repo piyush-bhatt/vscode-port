@@ -2,7 +2,7 @@
   "name": "vscode-port",
   "displayName": "Port",
   "description": "Check port availability, get an available port, or kill process on a port from VSCode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "piyush-bhatt",
   "author": {
     "name": "Piyush Bhatt"
@@ -58,7 +58,7 @@
       },
       {
         "command": "port.killPort",
-        "title": "Kill process on a port"
+        "title": "Kill process on port"
       }
     ]
   },
